@@ -1,0 +1,3 @@
+<button (click)="OnSetParaVisibility()">Toggle display details</button>
+<p *ngIf="ToggleButtonState">Secret password: Password@123</p>
+<p *ngFor="let log of ButtonClickArray;let iteration = index" [ngStyle]="{backgroundColor: iteration >= 5?'blue':'transparent'}" [ngClass]="{WhiteFont: iteration >= 5}"> {{ log }}</p>

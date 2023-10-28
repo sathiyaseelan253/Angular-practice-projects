@@ -1,0 +1,15 @@
+<form [formGroup]="userInputForm" (ngSubmit)="onUserFormSubmit()">
+    <label>Project Name</label>
+    <input name="projectName" formControlName="ProjectName">
+    <span class="errorMsg" *ngIf="!userInputForm.get('ProjectName')!.valid && userInputForm.get('ProjectName')!.touched">Please enter valid project name</span>
+    <br>
+    <label>Mail</label>
+    <input name="Mail" formControlName="Mail">
+    <span class="errorMsg" *ngIf="!userInputForm.get('Mail')!.valid && userInputForm.get('Mail')!.touched">Please enter valid Email ID</span>
+    <br>
+    <label>Project Status</label>
+    <select formControlName="Status">
+        <option *ngFor="let status of statuses" value="status">{{status}}</option>
+    </select>
+    <button type="submit" [disabled]="userInputForm.invalid">Submit</button>
+</form>

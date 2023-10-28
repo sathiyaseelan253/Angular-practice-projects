@@ -1,0 +1,3 @@
+<input type="text" [(ngModel)]="newServer"/>
+<button [disabled]="!btnStatus" (click)="OnServerCreated()">Create Server</button>
+<p>{{ serverCreatedStatus }}</p>

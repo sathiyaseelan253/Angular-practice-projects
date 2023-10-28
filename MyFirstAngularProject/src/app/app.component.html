@@ -1,0 +1,20 @@
+<h1>Angular First App...</h1>
+<hr>
+<!-- <app-success-alert></app-success-alert> -->
+<!-- <app-databinding></app-databinding> -->
+<!-- <app-directives-assignment></app-directives-assignment> -->
+<!-- <app-game-control [allFiredNumbers]="firedNumbers" (PassNumbers)="SaveNumbers($event)"></app-game-control> -->
+
+<app-game-control (PassNumbers)="SaveNumbers($event)"></app-game-control>
+<div class="row">
+    <div class="col-xs-12">
+        <app-odd *ngFor="let odd of OddNumbers" [OddNumber]="odd"></app-odd>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <app-even *ngFor="let even of EvenNumbers" [EvenNumber] = "even"></app-even>
+    </div>
+</div>
+
+<app-servers></app-servers>

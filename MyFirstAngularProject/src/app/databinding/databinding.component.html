@@ -1,0 +1,6 @@
+<input type="text" [(ngModel)]="Username"/>
+<p>{{ Username }}</p>
+<p *ngIf="usernameStatus">{{ 'Name entered is ' + Username }}</p>
+<button (click)="OnUsernameCreated()">Submit</button>
+<button [disabled]="Username == ''" (click)="ClearUsername()">Clear Username</button>
+<app-servers *ngFor="let name of AvailableUsernames"></app-servers>

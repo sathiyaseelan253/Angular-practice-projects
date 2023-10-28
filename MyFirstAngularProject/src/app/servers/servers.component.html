@@ -1,0 +1,4 @@
+<p [ngStyle]="{backgroundColor:getColor()}">{{ 'Server is '+ serverStatus  }}</p>
+<p>{{ date | datePipe}}</p>
+
+<p *ngFor="let server of servers | sort">{{ server  | reverse}} - {{ server}}</p>

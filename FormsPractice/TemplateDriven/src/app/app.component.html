@@ -1,0 +1,37 @@
+<!-- <form (ngSubmit)="onFormSubmit()" #form="ngForm">
+  <label>Email: </label>
+  <input 
+  id="email" 
+  name="email" 
+  ngModel
+  email
+  #email="ngModel"
+  type="email"
+  required>
+  <span class="errorMsg" *ngIf="!email.valid && email.touched">Please enter valid Email ID</span> 
+  <br>
+  <label>Subscription</label>
+  <select 
+    ngModel="subscription" 
+    #subscription="ngModel"
+    name="subscription"
+    [(ngModel)]="defaultSubscription">
+    <option value="Basic">Basic</option>
+    <option value="Advanced">Advanced</option>
+    <option value="Pro">Pro</option>
+  </select>
+  <br>
+  <label>Password</label>
+  <input 
+  name = "Password"
+  ngModel
+  #Password="ngModel"
+  type="password"
+  required>
+  <span class="errorMsg" *ngIf="!Password.valid && Password.touched">Please enter valid password</span>
+  <br>
+  <button [disabled]="!form.valid" type="submit">Submit</button>
+</form> -->
+
+<!-- <app-reactive></app-reactive> -->
+<app-back-end-app></app-back-end-app>
